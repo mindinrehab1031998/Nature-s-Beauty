@@ -1,0 +1,105 @@
+/* gallery.css */
+
+body{
+    margin:2%;
+    padding:20px;
+    background:#d9d9d9;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+h1{
+    color:#1d1d1d;
+}
+
+#image{
+
+    line-height:650px;
+    width:80%;
+    max-width:700px;
+    height:650px;
+
+    border:6px solid black;
+
+    margin:20px auto;
+
+    background-color:#4c6380;
+
+    background-image:url('');
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+    font-size:150%;
+
+    font-weight:bold;
+
+    border-radius:15px;
+
+    transition:
+    background-image .4s,
+    transform .3s;
+}
+
+
+.gallery{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+.preview{
+
+    width:180px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border:6px solid black;
+
+    border-radius:15px;
+
+    padding:4px;
+
+    transition:
+    transform .3s,
+    border-radius .3s;
+
+}
+
+
+.preview:hover{
+
+    transform:scale(1.1);
+
+    border-radius:50px;
+
+}
+
+
+.preview:focus{
+
+    outline:5px solid orange;
+
+    transform:scale(1.1);
+
+}
+
+
+.preview:nth-child(even){
+
+    border-radius:50%;
+}

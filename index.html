@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic Interactive Gallery</title>
+
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
+</head>
+
+<body onload="addTabFocus()">
+
+    <header>
+        <h1>National Geographic Interactive Gallery</h1>
+        <p>Explore landscapes and wildlife through an accessible photo experience.</p>
+    </header>
+
+    <main>
+
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
+        <section class="gallery">
+
+            <img class="preview"
+                src="images/mountain.jpg"
+                alt="A snow-covered mountain range at sunrise"
+                onmouseover="upDate(this)"
+                onmouseout="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+
+            <img class="preview"
+                src="images/lion.jpg"
+                alt="A lion resting in tall golden grass"
+                onmouseover="upDate(this)"
+                onmouseout="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+
+            <img class="preview"
+                src="images/rainforest.jpg"
+                alt="A dense green rainforest filled with trees"
+                onmouseover="upDate(this)"
+                onmouseout="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+
+            <img class="preview"
+                src="images/desert.jpg"
+                alt="Large sand dunes beneath a blue sky"
+                onmouseover="upDate(this)"
+                onmouseout="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+
+            <img class="preview"
+                src="images/ocean.jpg"
+                alt="Blue ocean waves near a rocky coastline"
+                onmouseover="upDate(this)"
+                onmouseout="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+
+            <img class="preview"
+                src="images/northernlights.jpg"
+                alt="Colorful northern lights across the night sky"
+                onmouseover="upDate(this)"
+                onmouseout="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+
+        </section>
+
+    </main>
+
+</body>
+</html>
